@@ -33,7 +33,7 @@
         </div>
     </form>
     <div class="center">
-        Don't have account? <a href="MainController?action=register">Sign up here</a>
+        Don't have account? <a href="MainController?action=register">Sign up hereee</a>
     </div>
 </div>
 </body>
