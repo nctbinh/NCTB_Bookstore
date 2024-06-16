@@ -14,6 +14,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+
 import sample.product.BookDAO;
 import sample.product.BookDTO;
 import sample.product.CartDAO;
@@ -21,7 +22,6 @@ import sample.product.CartDTO;
 import sample.user.UserDTO;
 
 /**
- *
  * @author THANH BINH
  */
 @WebServlet(name = "CheckOutController", urlPatterns = {"/CheckOutController"})
@@ -39,20 +39,20 @@ public class CheckOutController extends HttpServlet {
             HttpSession session = request.getSession();
 
             List<BookDTO> list = new ArrayList<>();
-            
+
             BookDAO bDao = new BookDAO();
-            
+
             CartDTO cart = (CartDTO) session.getAttribute("CART");
             CartDAO dao = new CartDAO();
 
             UserDTO user = (UserDTO) session.getAttribute("USER");
 
-            String useraddress = request.getParameter("useraddress");
+            String userAddress = request.getParameter("userddress");
             String userphone = request.getParameter("userphone");
             String total = request.getParameter("total");
-            
 
-            int id = dao.addOrder(user.getUserID(), useraddress, userphone, Double.parseDouble(total));
+
+            int id = dao.addOrder(user.getUserID(), userAddress, userphone, Double.parseDouble(total));
 
             for (Map.Entry<String, BookDTO> entry : cart.getCart().entrySet()) {
                 String quantity = request.getParameter("quantity" + entry.getValue().getBookID());
@@ -63,14 +63,14 @@ public class CheckOutController extends HttpServlet {
                 list.add(book);
                 url = SUCCESS;
             }
-            
+
             cart = new CartDTO();
             session.setAttribute("CART", cart);
             session.setAttribute("ITEMS_LIST", list);
-            session.setAttribute("ADDRESS", useraddress);
+            session.setAttribute("ADDRESS", userAddress);
             session.setAttribute("PHONE", userphone);
             session.setAttribute("TOTAL", total);
-            
+
         } catch (Exception e) {
         } finally {
             request.getRequestDispatcher(url).forward(request, response);
@@ -78,13 +78,14 @@ public class CheckOutController extends HttpServlet {
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
+
     /**
      * Handles the HTTP <code>GET</code> method.
      *
-     * @param request servlet request
+     * @param request  servlet request
      * @param response servlet response
      * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
+     * @throws IOException      if an I/O error occurs
      */
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -95,10 +96,10 @@ public class CheckOutController extends HttpServlet {
     /**
      * Handles the HTTP <code>POST</code> method.
      *
-     * @param request servlet request
+     * @param request  servlet request
      * @param response servlet response
      * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
+     * @throws IOException      if an I/O error occurs
      */
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
