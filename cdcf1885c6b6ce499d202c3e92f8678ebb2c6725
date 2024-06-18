@@ -22,6 +22,30 @@
       },
       "revId": "cdcf1885c6b6ce499d202c3e92f8678ebb2c6725",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fc352a3f_42530c13",
+        "filename": "src/java/sample/controller/CheckOutController.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 1038102
+      },
+      "writtenOn": "2024-06-18T13:55:21Z",
+      "side": 1,
+      "message": "Okay",
+      "parentUuid": "26adc050_822abf35",
+      "range": {
+        "startLine": 55,
+        "startChar": 65,
+        "endLine": 55,
+        "endChar": 74
+      },
+      "revId": "cdcf1885c6b6ce499d202c3e92f8678ebb2c6725",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
