@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3206d328_979c5ee7",
+        "filename": "web/login.jsp",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1038115
+      },
+      "writtenOn": "2024-06-18T13:59:54Z",
+      "side": 1,
+      "message": "test comment",
+      "revId": "bd80756cf729b2446b694fb90b536a9a4b4a41c3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
