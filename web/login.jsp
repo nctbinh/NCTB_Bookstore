@@ -18,7 +18,7 @@
     <form action="MainController" method="post" class="login-form">
 
         <div class="login-box">
-            <label for="username" class="login-label">Username</label>
+            <label for="username" class="login-label">Usernameê</label>
             <input type="text" name="userID" id="username" class="login-input"/>
         </div>
 
