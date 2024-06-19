@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "99cf922a_b1d407dc",
+        "filename": "src/java/sample/controller/LoginController.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 1038102
+      },
+      "writtenOn": "2024-06-19T03:21:12Z",
+      "side": 1,
+      "message": "Review Test",
+      "range": {
+        "startLine": 52,
+        "startChar": 68,
+        "endLine": 52,
+        "endChar": 75
+      },
+      "revId": "929c961d6b73c2bde2c78420c0ca27c73dcad0e0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
