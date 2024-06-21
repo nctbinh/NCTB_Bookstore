@@ -47,7 +47,7 @@ public class CheckOutController extends HttpServlet {
 
             UserDTO user = (UserDTO) session.getAttribute("USER");
 
-            String userAddress = request.getParameter("userddress");
+            String userAddress = request.getParameter("useraddress");
             String userphone = request.getParameter("userphone");
             String total = request.getParameter("total");
 
