@@ -49,7 +49,7 @@ public class LoginController extends HttpServlet {
                     url = USER;
                     session.setAttribute("BOOK_LIST", bDao.getBookList());
                 } else {
-                    request.setAttribute("ERROR", "Your role is not support");
+                    request.setAttribute("ERROR", "Your role is not supported");
                 }
             } else {
                 request.setAttribute("ERROR", "Incorrect userID or Password");
