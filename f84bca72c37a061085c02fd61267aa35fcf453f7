@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "65302861_39334f11",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1038102
+      },
+      "writtenOn": "2024-06-21T03:33:30Z",
+      "side": 1,
+      "message": "Okay",
+      "revId": "f84bca72c37a061085c02fd61267aa35fcf453f7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "47a84431_bd06bfc9",
+        "filename": "src/java/sample/controller/LoginController.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 1038102
+      },
+      "writtenOn": "2024-06-21T03:33:30Z",
+      "side": 1,
+      "message": "This a comment (press c)",
+      "range": {
+        "startLine": 52,
+        "startChar": 68,
+        "endLine": 52,
+        "endChar": 77
+      },
+      "revId": "f84bca72c37a061085c02fd61267aa35fcf453f7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
