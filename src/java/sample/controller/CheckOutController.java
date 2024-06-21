@@ -47,12 +47,12 @@ public class CheckOutController extends HttpServlet {
 
             UserDTO user = (UserDTO) session.getAttribute("USER");
 
-            String userAddress = request.getParameter("userddress");
-            String userphone = request.getParameter("userphone");
+            String userAddress = request.getParameter("useraddress");
+            String userPhone = request.getParameter("userphone");
             String total = request.getParameter("total");
 
 
-            int id = dao.addOrder(user.getUserID(), userAddress, userphone, Double.parseDouble(total));
+            int id = dao.addOrder(user.getUserID(), userAddress, userPhone, Double.parseDouble(total));
 
             for (Map.Entry<String, BookDTO> entry : cart.getCart().entrySet()) {
                 String quantity = request.getParameter("quantity" + entry.getValue().getBookID());
@@ -68,7 +68,7 @@ public class CheckOutController extends HttpServlet {
             session.setAttribute("CART", cart);
             session.setAttribute("ITEMS_LIST", list);
             session.setAttribute("ADDRESS", userAddress);
-            session.setAttribute("PHONE", userphone);
+            session.setAttribute("PHONE", userPhone);
             session.setAttribute("TOTAL", total);
 
         } catch (Exception e) {
