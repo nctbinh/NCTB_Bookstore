@@ -22,16 +22,6 @@ import sample.product.OrderDTO;
  */
 @WebServlet(name = "ViewAllOrderController", urlPatterns = {"/ViewAllOrderController"})
 public class ViewAllOrderController extends HttpServlet {
-
-    /**
-     * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
-     * methods.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
     public static final String SUCCESS = "staff.jsp";
     public static final String ERROR = "staff.jsp";
 
