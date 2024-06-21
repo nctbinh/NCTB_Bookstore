@@ -18,7 +18,7 @@
     <form action="MainController" method="post" class="login-form">
 
         <div class="login-box">
-            <label for="username" class="login-label">Username</label>
+            <label for="username" class="login-label">Usernameê</label>
             <input type="text" name="userID" id="username" class="login-input"/>
         </div>
 
@@ -33,7 +33,7 @@
         </div>
     </form>
     <div class="center">
-        Don't have account? <a href="MainController?action=register">Sign up here</a>
+        Don't have account? <a href="MainController?action=register">Sign up hereee</a>
     </div>
 </div>
 </body>
